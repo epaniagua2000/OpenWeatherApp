@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OpenWeather</string>
+    <string name="toggleunits">toggleUnits</string>
+    <string name="dailyforecast">dailyForecast</string>
+    <string name="changeloc">changeLoc</string>
+    <string name="_8am">8am</string>
+    <string name="_1pm">1pm</string>
+    <string name="_5pm">5pm</string>
+    <string name="_11pm">11pm</string>
+
+</resources>

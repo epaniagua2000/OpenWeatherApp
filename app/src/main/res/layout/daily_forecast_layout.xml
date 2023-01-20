@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dailyEveTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="17dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/dailyNightTemp"
+        app:layout_constraintStart_toEndOf="@+id/dailyDayTemp"
+        app:layout_constraintTop_toBottomOf="@+id/dailyUV"
+        tools:text="63*F" />
+
+    <TextView
+        android:id="@+id/dailyNightTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dailyEveTemp"
+        app:layout_constraintTop_toBottomOf="@+id/dailyUV"
+        tools:text="63*F" />
+
+    <TextView
+        android:id="@+id/dailyMornTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="17dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/dailyDayTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyUV"
+        tools:text="61*F" />
+
+    <TextView
+        android:id="@+id/dailyDayTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="17dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/dailyEveTemp"
+        app:layout_constraintStart_toEndOf="@+id/dailyMornTemp"
+        app:layout_constraintTop_toBottomOf="@+id/dailyUV"
+        tools:text="64*F" />
+
+    <TextView
+        android:id="@+id/dailyDate"
+        android:layout_width="413dp"
+        android:layout_height="25dp"
+        android:background="#526298"
+        android:paddingStart="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Thursday, 9/30" />
+
+    <TextView
+        android:id="@+id/dailyMaxMin"
+        android:layout_width="172dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyDate"
+        tools:text="77*F/65*F" />
+
+    <TextView
+        android:id="@+id/dailyDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyMaxMin"
+        tools:text="Broken Clouds" />
+
+    <TextView
+        android:id="@+id/dailyPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyDesc"
+        tools:text="(0% precip.)" />
+
+    <TextView
+        android:id="@+id/dailyUV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyPop"
+        tools:text="UV Index: 2" />
+
+    <TextView
+        android:id="@+id/eightAM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="16dp"
+        android:text="8am"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyMornTemp" />
+
+    <TextView
+        android:id="@+id/onePM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="1pm"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/eightAM2"
+        app:layout_constraintTop_toBottomOf="@+id/dailyDayTemp" />
+
+    <TextView
+        android:id="@+id/fivePM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:text="5pm"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/elevenPM2"
+        app:layout_constraintTop_toBottomOf="@+id/dailyEveTemp" />
+
+    <TextView
+        android:id="@+id/elevenPM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="11pm"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyNightTemp" />
+
+    <ImageView
+        android:id="@+id/dailyWeatherIcon"
+        android:layout_width="106dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_01d" />
+</androidx.constraintlayout.widget.ConstraintLayout>
